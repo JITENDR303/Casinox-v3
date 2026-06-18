@@ -15,7 +15,7 @@ jobs:
     - name: Unpack Project Zip Archive
       run: |
         sudo apt-get install unzip
-        unzip -o project.zip
+        unzip -o launcher.zip
 
     - name: Mount Java 17 Engine
       uses: actions/setup-java@v4
