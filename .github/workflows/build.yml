@@ -23,8 +23,10 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Set Up Gradle Build System
+    - name: Set Up Compatible Gradle System
       uses: gradle/actions/setup-gradle@v4
+      with:
+        gradle-version: 8.7
 
     - name: Run Production Compile Execution
       run: gradle assembleDebug
